@@ -27,12 +27,10 @@
       <version>1.0-SNAPSHOT</version>
     </dependency>
     <!-- For future event-driven orchestration (optional, can be added later) -->
-    <!--
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-stream-kafka</artifactId>
     </dependency>
-    -->
   </dependencies>
   <build>
     <plugins>

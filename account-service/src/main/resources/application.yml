@@ -13,6 +13,15 @@ spring:
   h2:
     console:
       enabled: true
+  cloud:
+    stream:
+      default-binder: kafka
+      bindings:
+        sagaEvents-in-0:
+          destination: saga-events
+      kafka:
+        binder:
+          brokers: localhost:9092
 
 eureka:
   client:

@@ -14,8 +14,7 @@ public class SagaController {
 
     @PostMapping("/start")
     public ResponseEntity<String> startSaga(@RequestBody SagaRequestDTO request) {
-        // For now, just call the stub service
         sagaOrchestratorService.startSaga(request);
-        return ResponseEntity.ok("Saga started (stub)");
+        return ResponseEntity.ok("Saga started: event published to orchestrator");
     }
 }
