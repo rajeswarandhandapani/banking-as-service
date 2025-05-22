@@ -11,4 +11,35 @@
   <packaging>jar</packaging>
   <name>Saga Orchestrator</name>
   <description>Central coordinator for distributed transactions (Sagas)</description>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+    </dependency>
+    <!-- Common Lib DTOs -->
+    <dependency>
+      <groupId>com.rajeswaran</groupId>
+      <artifactId>common-lib</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <!-- For future event-driven orchestration (optional, can be added later) -->
+    <!--
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-stream-kafka</artifactId>
+    </dependency>
+    -->
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
 </project>
